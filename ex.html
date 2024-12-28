@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+        #profile {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <button id="profile">Yash</button><br><br>
+
+    <div class="profile-Card">
+        <input type="text" placeholder="Enter Your Name">
+        <div id="colors">
+            <div class="color" style="background-color: plum;"></div>
+            <div class="color" style="background-color: white;"></div>
+            <div class="color" style="background-color: skyblue;"></div>
+            <div class="color" style="background-color: green"></div>
+            <div class="color" style="background-color: #000;"></div>
+            <div class="color" style="background-color: grey;"></div>
+        </div>
+        <button type="submit">Submit</button>
+    </div>
+
+    <style>
+        .profile-Card {
+            padding: 20px;
+            background-color: #222;
+            display: grid;
+            width: fit-content;
+        }
+        .profile-Card input {
+            padding: 10px;
+            outline: none;
+            border: none;
+            background-color: #151515;
+            padding: 15px 20px;
+            color: #fff;
+        }
+        .profile-Card #colors {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        .profile-Card .color {
+            width: 40px;
+            height: 40px;
+            border-radius: 100px;
+            border: 2px solid transparent;
+        }
+        .profile-Card .color:hover {
+            border: 2px solid #fff;
+        }
+        .profile-Card button {
+            padding: 12px;
+            background-color: #000;
+            border: none;
+            color: #fff;
+            margin-top: 15px;
+            border-radius: 100px;
+        }
+    </style>
+    <script>
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+  <title>Spotify Clone - ( Javascript )</title>
+
+ <body>
+  
+  <nav>
+    <div class="logo"><i class="fa fa-headphones" aria-hidden="true"></i> Gaana</div>
+    <div class="searchBar">
+      <i class="fa-solid fa-home" aria-hidden="true"></i>
+      <input type="search" placeholder="Search Songs..."/>
+    </div>
+    <div class="profile">
+      <i class="fa fa-bell"></i>
+      <div class="uName"><abbr title="Yash Kale">Y</abbr></div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="sideBar">
+      <header>
+        <div class="title"><i class="fa fa-bars" aria-hidden="true" style="margin-right: 5px;"></i> Your Folders</div>
+        <i class="fa-solid fa-plus" aria-hidden="true"></i>
+      </header>
+      <br>
+      <div class="folders">
+
+        <div class="folder">
+          <i class="fa fa-folder-open" aria-hidden="true" style="margin-right: 10px;color: plum;"></i>
+          <div id="folderInfo">
+            <div class="fName">All Songs Here...</div>
+            <div class="fItems" id="totalSong">0 Songs</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <style>
+      
+    </style>
+
+    <div class="mainContent">
+      <header><button style="background-color: #fff;color: #000;">All</button><button>Songs</button><button>Podcats</button></header><br>
+      <div class="songList">
+        <div id="fName"># Songs Here..</div><br>
+        <div id="sFiles">
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <style>
+    
+  </style>
+
+
+  <div class="controler">
+    <div class="songName">
+      <i class="fa fa-music" aria-hidden="true" style="font-size: 36px;"></i>
+      <div id="csName">Hello World!</div>
+    </div>
+
+    <div class="audio-player">
+      <audio id="audio" src=""></audio>
+    
+      <!-- Controls -->
+      <div class="controls">
+          <i class="fa fa-backward" aria-hidden="true"></i>
+          <button class="play-pause-btn" id="play-pause-btn"><i class="fa fa-play" aria-hidden="true"></i></button>
+          <i class="fa fa-forward" aria-hidden="true"></i>
+      </div>
+  
+      <!-- Progress bar -->
+      <div class="progressBar">
+        <span class="time" id="current-time">0:00</span>
+        <div class="progress-container" id="progress-container">
+          <div class="progress" id="progress"></div>
+          <div class="progress-point" id="progress-point"></div>
+        </div>
+        <span class="time" id="duration">0:00</span>
+      </div>
+    </div>
+
+    <div class="others"></div>
+  </div>
+  
+ 
+
+  <script src="script.js"></script>
+  <script src="controlers.js"></script>
+</body>
+</html>

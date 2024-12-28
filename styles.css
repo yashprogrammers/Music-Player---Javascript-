@@ -1,0 +1,248 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+body {
+  background-color: #000;
+  color: #ffff;
+}
+nav,
+.searchBar,
+.profile {
+  display: flex;
+  align-items: center;
+}
+nav {
+  justify-content: space-between;
+  padding: 10px 25px;
+}
+nav .logo {
+  font-size: 34px;
+  cursor: pointer;
+  font-weight: bold;
+  color: plum;
+}
+nav .searchBar {
+  gap: 8px;
+}
+nav .searchBar i {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 12px;
+  background-color: #222;
+  border-radius: 100px;
+}
+nav input {
+  padding: 12px 20px;
+  outline: none;
+  width: 450px;
+  font-size: 18px;
+  border: none;
+  background-color: #222;
+  border-radius: 100px;
+  color: #fff;
+}
+nav .profile {
+  gap: 20px;
+  font-size: 20px;
+}
+nav .uName {
+  background-color: plum;
+  cursor: pointer;
+  color: #000;
+  width: 30px;
+  font-size: 16px;
+  height: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 2px 5px rgb(80, 80, 80);
+  padding: 3px;
+  text-align: center;
+  border-radius: 100px;
+}
+
+/* ----- main ----  */
+
+main {
+  display: grid;
+  grid-template-columns: 23% auto;
+  gap: 10px;
+  padding: 0px 10px;
+}
+main .sideBar, .mainContent {
+  background-color: #151515;
+  padding: 20px;
+  border-radius: 5px;
+  height: 85vh;
+}
+
+
+/* ---- sidebar ----  */
+
+main .sideBar header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  color: lightgray;
+  /* padding: 10px; */
+}
+
+main .sideBar i:hover {
+  color: plum;
+}
+main .mainContent header button{
+  padding: 4px 10px;
+  border: none;
+  margin: auto 5px;
+  font-size: 16px;
+  background-color: #4d4d4d;
+  color: #fff;
+  border-radius: 100px;
+}
+.sideBar .folder{
+  display: flex;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: #222;
+  cursor: pointer;
+}
+.sideBar .folder i {
+  font-size: 35px;
+}
+
+
+/* --------- display songs ----------  */
+
+.songList {
+  overflow: scroll;
+  height: 65vh;
+  scrollbar-width: none;
+}
+.songList #fName{
+  font-size: 30px;
+  font-weight: bold;
+}
+.songList #sFiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.songList .song {
+  width: 160px;
+  padding: 10px;
+  background-color: #222;
+  cursor: pointer;
+}
+.songList .song hr {
+  margin: 10px 0px;
+}
+.songList .song .img {
+  height: 140px;
+  background-color: plum;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.songList .img i {
+  box-shadow: 0px 0px 2px 5px #00000032;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.song {
+  transition: ease 0.3s;
+}
+.song:hover {
+  background-color: #1715159b;
+  margin-top: -10px;
+}
+.songList .song #sName {
+  text-align: center;
+  font-size: 16px;
+}
+
+/* ------------- progress bar -----------  */
+
+.controler {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25% 40% 25%;
+  justify-content: center;
+  position: absolute;
+  bottom: 0%;
+  background-color: #000;
+}
+.audio-player {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: center;
+}
+.progress-container {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background: #ccc;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.progress {
+  height: 100%;
+  background: plum;
+  width: 0%;
+}
+.progress-point {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background: plum;
+  border-radius: 50%;
+  transform: translate(-50%, 0);
+  cursor: pointer;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 20px;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.time {
+  font-size: 14px;
+}
+.play-pause-btn {
+  background-color: plum;
+  border: none;
+  color: #000;
+  width: 40px;
+  font-size: 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  cursor: pointer;
+}
+.progressBar {
+  display: flex;
+  gap: 20px;
+}
+.songName {
+  display: flex;
+  gap: 10px;
+  align-items:center;
+  padding: 10px;
+}
+.songName #csName {
+  font-size: 20px;
+  padding: 10px;
+  border-left: 5px solid plum;
+}
